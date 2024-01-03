@@ -1,1 +1,1 @@
-# academy_algorithm
+# algorithm
