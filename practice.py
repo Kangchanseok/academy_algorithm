@@ -24,10 +24,15 @@
 
 # 10810
 
-n,m = map(int,input().split())
-lst = [0 for i in range(n)]
-for i in range(m):
-    a,b,c = map(int,input().split())
-    lst[a-1:b] = [c] * (b-a+1)
-print(*lst)
+# n,m = map(int,input().split())
+# lst = [0 for i in range(n)]
+# for i in range(m):
+#     a,b,c = map(int,input().split())
+#     lst[a-1:b] = [c] * (b-a+1)
+# print(*lst)
     
+
+word = input()
+alphabet = list(range(97,123)) # 아스키코드에서 a는 97이고 z 는 122임
+for x in alphabet :
+    print(word.find(chr(x))) 
