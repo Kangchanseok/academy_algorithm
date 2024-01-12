@@ -32,7 +32,34 @@
 # print(*lst)
     
 
-word = input()
-alphabet = list(range(97,123)) # 아스키코드에서 a는 97이고 z 는 122임
-for x in alphabet :
-    print(word.find(chr(x))) 
+# word = input()
+# alphabet = list(range(97,123)) # 아스키코드에서 a는 97이고 z 는 122임
+# for x in alphabet :
+#     print(word.find(chr(x))) 
+
+# n = int(input())
+# for _ in range(n):
+#     r, s = input().split()
+#     for i in s:
+#         i += i*(int(r)-1)
+#         print(i, end='')
+
+# n = int(input())
+# for i in range(n):
+#     a,b = input().split()
+#     st = ''
+#     for j in b:
+#         st += int(a) * j
+#     print(st)
+    
+# 2747
+n = int(input())
+def pibo(x):
+    if x < 2:
+        return x
+    else:
+        return pibo(x-2) + pibo(x-1)
+
+print(pibo(n))
+                
+    
