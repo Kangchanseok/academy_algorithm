@@ -53,13 +53,21 @@
 #     print(st)
     
 # 2747
-n = int(input())
-def pibo(x):
-    if x < 2:
-        return x
-    else:
-        return pibo(x-2) + pibo(x-1)
+# n = int(input())
+# def pibo(x):
+#     if x < 2:
+#         return x
+#     else:
+#         return pibo(x-2) + pibo(x-1)
 
-print(pibo(n))
+# print(pibo(n))
                 
-    
+
+n,m = map(int, input().split())
+lst = [_ for _ in range(1,n+1)]
+for i in range(m):
+    a,b = map(int, input().split())
+    temp = lst[a-1:b]
+    temp.reverse()
+    lst[a-1:b] = temp
+print(*lst)
